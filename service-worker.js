@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Business-Card/precache-manifest.782ef908a5b0b60daf9f0dd090fef108.js"
+  "/projects/Business-Card/precache-manifest.5a51669ea668b2a2b4e5ff1fc40d54e9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Business-Card/index.html", {
+workbox.routing.registerNavigationRoute("/projects/Business-Card/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
