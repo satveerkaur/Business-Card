@@ -1,13 +1,142 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  max-width: 300px;
+  color: white;
+  background-color: rgb(57, 56, 56);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+  
+  --fw-reg: 300;
+  --fw-bold: 900;
+  
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: rgb(246, 97, 179);
+  
+  --fs-h1: 2.25rem;
+  --fs-h2: 1.25rem;
+  --fs-h3: 1rem;
+  --fs-body: 1rem;
+  
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
+h1{
+  font-size: var(--fs-h1);
+}
+h2{
+  font-size: var(--fs-h2);
+}
+
+.card{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  background-color: black;
+  width: 330px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* General styles */
+
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+body {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+}
+
+/*header */
+header{
+  width: 330px;
+}
+.profile__img{
+  width: inherit;
+}
+.profile__info{
+  text-align: center;
+}
+.profile__link{
+  text-decoration: none;
+  color: var(--clr-accent);
+}
+.profile__link:hover{
+  opacity: .7;
+}
+.profile__mail{
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+header button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  width: 247px;
+  height: 34px;
+  left: 151px;
+  top: 469px;
+}
+header ul{
+  list-style: none;
+}
+
+/*main*/
+
+main{
+  width: 300px;
+  line-height: 1.6;
+  padding: 10px;
+}
+main>div>h2{
+  color: var(--clr-accent);
+}
+main p{
+  word-wrap: break-word;
+}
+
+/*footer*/
+footer{
+  width: 330px;
+  padding-bottom: 10px;;
+}
+footer> ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+
+}
+
+.social-list__link:hover {
+  opacity: .7;
+}
+
+.social-list__link {
+  padding: .5em;
+  color: var(--clr-accent)
+}
+
+
+
